@@ -1,140 +1,195 @@
 body{
-  background: white;
-  color: rgb(15,15,15);
+  background: rgb(245,245,245);
+  color: red;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Helvetica;
 }
 h1{
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  font-weight: lighter;
-  font-size: 60px;
+  font-family: Courier;
+  color: red;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+h2 {
+  font-family: Courier;
+  color: black;
+  font-weight: lighter;
+  font-size: 30px;
 }
 a {
-  color: black;
+  color: gold;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-  color: #8F2425;
+  font-size: 50px;
 }
 
-#footer a {
-  color: lightgrey;
-  font-size: 15px;
+img:hover {
+  width: 250px;
 }
-#footer a:hover {
-  color: white;
-}
+
 
 #banner{
   text-align: center;
-  background-image: linear-gradient(-225deg, transparent 0%, rgba(0,0,0,0.5) 60%), url("images/bootcamp.gif");
+  /*background-image: url("https://unsplash.it/1300/600?random");*/
+  /*background-color: black;*/
+  background-image: url(images/banner.png);
   background-size: cover;
-  padding-top: 150px;
-  height: 100vh;
+  padding: 50px;
   color: white;
-
+  text-shadow: 1px 1px 5px black;
 }
-
-#gif{
-  text-align: center;
-  background-image: url("images/hello.gif");
-  background-size: cover;
-  padding: 30vw 0;
-  color: white;
-  overflow-y: hidden;
-}
-
 #banner h1 {
   color: white;
-  font-size: 50px;
-  font-weight: bolder;
-  text-shadow: 1px 1px 5px black;
-  padding-top: 30px;
+  font-size: 70px;
 }
 #banner p {
-  color: rgb(230,23);
-  opacity: 0.8;
-  font-size: 25px;
-  font-weight: lighter;
-  text-shadow: 1px 1px 5px black;
-  padding-bottom: 40px
-}
-#footer{
-  padding: 30px;
-  background: rgb(30, 30, 30);
-  color: lightgrey;
-}
-.card{
-  padding: 70px 30px;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.icon-size {
-  font-size: 50px;
-}
-
-.form-margin {
-  margin-top: 20px;
-}
-
-.btn-red {
   color: white;
-  background-color: #D23333;
+  opacity: 0.8;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 25px;
 }
 
-#wufoo-sx0l84z1iszo7g {
-  padding: 50px 30px;
+#button {
+  background-image: url(images/fond_form.png);
+  background-size: cover;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 10px;
 }
 
-.cta {
-  background-color: rgb(220,220,220);
+#size_row {
+  margin: 0px;
+}
+
+
+#separation {
+  background-image: url(images/banner.png);
+  background-size: cover;
   padding: 50px;
 }
 
-#footer a {
+
+#fast {
+  background-image: url(images/fond_form.png);
+  background-size: cover;
+  text-align: center;
+}
+#fast p {
+  color: black;
+}
+
+#simple {
+  background-image: url(images/fond_card.png);
+  background-size: cover;
+  text-align: center;
+}
+#simple p {
+  color: rgb(120, 86, 40);
+}
+#simple h2 {
+  color: rgb(120, 86, 40);
+}
+
+#awesome {
+  background-image: url(images/fond_form.png);
+  background-size: cover;
+  text-align: center;
+}
+#awesome p {
+  color: black;
+}
+
+#beautiful {
+  background-image: url(images/fond_card.png);
+  background-size: cover;
+  text-align: center;
+}
+#beautiful p {
+  color: rgb(120, 86, 40);
+}
+#beautiful h2 {
+  color: rgb(120, 86, 40);
+}
+
+#background_card_fast {
+  padding: 0px;
+}
+#background_card_simple {
+  padding: 0px;
+}
+#background_card_awesome {
+  padding: 0px;
+}
+#background_card_beautiful {
+  padding: 0px;
+}
+
+#form {
+  background-image: url(images/fond_form.png);
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#background_form {
+  padding: 0px;
+}
+
+.card{
+  height: 50%;
+  font-weight: lighter;
+}
+.card h2 {
+  font-family: 'News Cycle', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 70px;
+}
+.card p {
+  font-family: 'Economica', sans-serif;
   font-size: 30px;
 }
 
+
+#footer{
+  padding: 25px;
+  background-image: url(images/banner.png);
+  background-size: cover;
+  color: lightgrey;
+  text-align: center;
+}
+#footer a {
+  color: rgb(120, 86, 40);;
+  font-size: 50px;
+}
 #footer a:hover {
-  color: #D23333;
+  color: red;
 }
-
-/*Search List style*/
-
-.card-list {
-  display: flex;
-  background-color: rgb(240, 240, 240);
-  overflow-wrap: normal;
-  padding: 30px 90px;
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 20px;
+  margin-top: 30px;
 }
-
-.card-list:hover {
-  background-color: rgb(230, 230, 230);
+#footer li {
+  display: inline;
+  padding: 70px;
 }
 
 
-
-.card-list-text {
-flex: 1 1 70%;
-text-align: left;
-padding:0 20px;
+#background_card_fast {
+  padding: 0px;
 }
-
-.card-list-text p {
-font-weight: lighter
+#background_card_simple {
+  padding: 0px;
 }
-
-.card-list-text h6 {
-font-style: italic;
-margin-top: 30px;
+#background_card_awesome {
+  padding: 0px;
 }
-
-.card-list-img {
-  flex: 0 1 auto;
+#background_card_beautiful {
+  padding: 0px;
+}
+#background_form {
+  padding: 0px;
 }
