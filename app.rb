@@ -2,6 +2,8 @@ require 'open-uri'
 require 'nokogiri'
 require 'sinatra'
 
+puts "Hello World"
+
 get '/' do
   erb :'home'
 end
