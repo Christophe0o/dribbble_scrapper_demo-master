@@ -23,11 +23,11 @@ get '/search' do
     title = element.css(title_css_path).text
 
     # skip if it's not a real card
-    #unless title.empty?
+    unless title.empty?
       # url
-      #relative_url_css_path = '.dribbble .dribbble-shot .dribbble-img a.dribbble-over' # <= customize
-      #relative_url = element.css(relative_url_css_path).attr('href')
-      #absolute_url = "https://dribbble.com/#{relative_url}" # <= customize
+      relative_url_css_path = '' # <= customize
+      relative_url = element.css(relative_url_css_path).attr('href')
+      absolute_url = "#" # <= customize
       # or
       # absolute_url = "https://dribbble.com/" + relative_url
 
