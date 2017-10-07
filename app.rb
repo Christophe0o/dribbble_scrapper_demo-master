@@ -19,11 +19,8 @@ get '/search' do
 
   collection.each do |element|
     #title
-    #title_css_path = '' # <= customize
-    #title = element.css(title_css_path).text
-
-      image_url_css_path = '.cover a img' # <= customize
-      image_url = element.css(image_url_css_path).attr('src')
+    title_css_path = '.rf-project-cover__details a' # <= customize
+    title = element.css(title_css_path).text
 
     # skip if it's not a real card
     #unless title.empty?
@@ -35,7 +32,7 @@ get '/search' do
       # absolute_url = "https://dribbble.com/" + relative_url
 
       # image
-      #image_url_css_path = '' # <= customize
+      #image_url_css_path = '.cover a img' # <= customize
       #image_url = element.css(image_url_css_path).attr('src')
 
       #@cards << [title, absolute_url, image_url]
@@ -46,7 +43,4 @@ get '/search' do
 
   erb :'search'
 end
-
-
-
 
