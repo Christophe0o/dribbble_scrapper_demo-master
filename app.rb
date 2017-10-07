@@ -37,6 +37,9 @@ get '/search' do
 
       #@cards << [title, absolute_url, image_url]
     #end
+
+      @cards << [title, absolute_url, image_url]
+      
   end
 
   erb :'search'
