@@ -14,7 +14,7 @@ get '/search' do
   html_file = open(search_url)
   html_document = Nokogiri::HTML(html_file)
 
-  collection_css_path = '.rf-project-cover' # <= customize
+  collection_css_path = 'html body' # <= customize
   collection = html_document.css(collection_css_path)
 
   collection.each do |element|
@@ -22,7 +22,7 @@ get '/search' do
     #title_css_path = '' # <= customize
     #title = element.css(title_css_path).text
 
-      image_url_css_path = '.rf-project-cover a img' # <= customize
+      image_url_css_path = 'a img' # <= customize
       image_url = element.css(image_url_css_path).attr('src')
 
     # skip if it's not a real card
@@ -46,4 +46,8 @@ get '/search' do
 
   erb :'search'
 end
+
+
+
+html body 
 
