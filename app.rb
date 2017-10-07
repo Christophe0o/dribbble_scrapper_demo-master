@@ -9,7 +9,7 @@ end
 get '/search' do
   @cards = []
 
-  search_url = "https://www.behance.net/search?content=projects&sort=appreciations&time=week&search=fusée" # <= customize
+  search_url = "https://www.behance.net/search?content=projects&sort=appreciations&time=week&search=fus%C3%A9e" # <= customize
 
   html_file = open(search_url)
   html_document = Nokogiri::HTML(html_file)
