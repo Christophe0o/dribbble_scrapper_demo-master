@@ -42,5 +42,4 @@ get '/search' do
   erb :'search'
 end
 
-div.rf-project-cover__details a.rf-project-cover__title.js-project-cover-title-link
 
