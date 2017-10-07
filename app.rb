@@ -19,7 +19,7 @@ get '/search' do
 
   collection.each do |element|
     #title
-    title_css_path = '.rf-project-cover__details a' # <= customize
+    title_css_path = '.cover .rf-project-cover__details a' # <= customize
     title = element.css(title_css_path).text
 
     @cards << [title]
