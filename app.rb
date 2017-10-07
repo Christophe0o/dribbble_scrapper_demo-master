@@ -22,7 +22,7 @@ get '/search' do
     #title_css_path = 'div.rf-project-cover__details a.rf-project-cover__title.js-project-cover-title-link' # <= customize
     #title = element.css(title_css_path).text
 
-      image_url_css_path = 'div.rf-project-cover.rf-project-cover--project.js-item.js-project-cover.qa-project-cover.editable.first a.rf-project-cover__image-container.js-project-cover-image-link.js-project-link img.rf-project-cover__image' # <= customize
+      image_url_css_path = 'div.rf-project-cover.rf-project-cover--project.js-item.js-project-cover.qa-project-cover.editable.first a.rf-project-cover__image-container.js-project-cover-image-link.js-project-link img' # <= customize
       image_url = element.css(image_url_css_path).attr('src')
 
     # skip if it's not a real card
@@ -46,5 +46,4 @@ get '/search' do
 
   erb :'search'
 end
-
 
