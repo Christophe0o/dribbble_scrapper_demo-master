@@ -27,6 +27,11 @@ img:hover {
   width: 250px;
 }
 
+.cta {
+  background-color: rgb(220,220,220);
+  padding: 50px;
+}
+
 
 #banner{
   text-align: center;
